@@ -2,3 +2,17 @@ h1,
 p {
     text-align: center;
 }
+
+.centered {
+    display: flex;
+
+}
+
+
+body {
+    background-image: url('SunsetMountains.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
