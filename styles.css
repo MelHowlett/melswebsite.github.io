@@ -3,6 +3,11 @@ p {
     text-align: center;
 }
 
+h1 {
+    font-size: 50px;
+    color: #2d2d2d;
+}
+
 .centered {
     display: flex;
 
@@ -15,4 +20,15 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+.flex-container {
+    justify-content: center;
+    display: flex;
+}
+
+.flex-item {
+    padding: 1em;
+    text-align: center;
+    flex-grow: 1;
 }
