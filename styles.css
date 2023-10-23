@@ -16,6 +16,7 @@ body {
     display: flex; /* Use flexbox to create an inline layout */
     justify-content: space-between;/* Align items at the start and end with space in between */
     align-items: flex-start; 
+    margin: 20px;
 }
 
 .inline-container > div:nth-of-type(2) {
