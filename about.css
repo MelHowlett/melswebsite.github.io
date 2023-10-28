@@ -1,0 +1,26 @@
+body {
+    background-image: url(images/Family.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.about-us {
+    font-size: 100px;
+    text-align: center;
+    flex-grow: 2;
+    align-self: flex-end;
+    padding: 1em;
+    display: grid;
+    font-family: 'Madelyn', sans-serif;
+    color: #fcfbfa;
+}
+
+.about-us>div>p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
