@@ -17,35 +17,11 @@ body {
     body {
         background-size: auto 100%; /* Vertically scale the background image, maintaining its aspect ratio */
     }
-}
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Center vertically on the page */
-}
-
-/* Define styles for the site-container */
-.site-container {
-    display: grid;
-    grid-template-rows: auto auto; /* Two rows, first for header, second for main content */
-    gap: 20px; /* Add spacing between header and main content */
-    align-items: center; /* Center vertically within the site-container */
-    justify-items: center; /* Center horizontally within the site-container */
-}
-
-.about-us {
-    text-align: center;
-    font-family: 'Madelyn', sans-serif;
-    color: #fcfbfa;
-    padding: 1em;
-}
-
-p {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: #fcfbfa;
+    nav ul li:not(:nth-child(4)) {
+        display: none;
+        font-size: 20px;
+    }
 }
 
 .journey /* Journey in Awe specific styles */{
@@ -55,16 +31,8 @@ p {
 }
 
 nav {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
-}
-
-/* Hide all navigation links except "Journey in Awe" on smaller screens */
-@media (max-width: 768px) {
-    nav ul li:not(:nth-child(4)) {
-        display: none;
-        font-size: 20px;
-    }
 }
 
 
@@ -92,11 +60,45 @@ nav ul li a/* Link styles */{
     color: #fcfbfa;
 }
 
-nav ul li a[href="index.html"] {
-    font-size: 60px;
-    font-family: 'Madelyn', sans-serif;
-    text-align: center;
-    display: inline;
-    margin-right: 10px;
+hr {
+    border: none;
+    height: 1px;
+    background:#fcfbfa;
+    margin: 0 3em;
 }
+
+main {
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 8em auto;
+    
+}
+
+.quote, .about-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #fcfbfa;
+    padding: 1em;
+}
+
+.quote {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.about-text {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.about-us {
+    font-family: 'Madelyn', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #fcfbfa;
+    text-align: center;
+    padding: 2em 0 0 0;
+}
+
 

@@ -29,7 +29,6 @@ body {
     margin-bottom: 0;
 }
 
-
 .inline-container /* Flexbox for header */{
     display: flex; /* Use flexbox to create an inline layout */
     justify-content: space-between;/* Align items at the start and end with space in between */
@@ -44,7 +43,7 @@ body {
 }
 
 nav {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -55,7 +54,6 @@ nav {
         font-size: 20px;
     }
 }
-
 
 nav ul /* Flexbox for navigation menu */ {
     list-style: none;
@@ -81,18 +79,11 @@ nav ul li a/* Link styles */{
     color: #fcfbfa;
 }
 
-nav ul li a[href="index.html"] {
-    font-size: 60px;
-    font-family: 'Madelyn', sans-serif;
-    text-align: center;
-    display: inline;
-    margin-right: 10px;
+hr {
+    border: none;
+    height: 1px;
+    background:#fcfbfa;
+    margin: 3em;
 }
-
-.site-container>nav /* Navigation styles */{
-    padding: 0;
-    grid-column: 1/3;
-}
-
 
 

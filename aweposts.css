@@ -48,7 +48,6 @@ nav {
     }
 }
 
-
 nav ul /* Flexbox for navigation menu */ {
     list-style: none;
     padding: 0;
@@ -56,7 +55,6 @@ nav ul /* Flexbox for navigation menu */ {
     justify-content: center;
     align-items: center; /* Horizontally center items */
     justify-items: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
 nav ul li /* List item styles including the media query */ {
@@ -81,17 +79,6 @@ hr {
 }
 
 article {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto; /* Center the box horizontally */
-    margin-top: 10px; /* Add some space from the top */
-    padding: 20px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #fcfbfa;
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: grid;
-    grid-template-columns: 15em 15em;
- 
+    display: flex;
+    flex-direction: column
 }
