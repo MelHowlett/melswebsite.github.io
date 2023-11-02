@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body {
+.home {
     background-image: url(images/SunsetMountainsDark.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,21 +13,19 @@ body {
     padding: 0;
 }
 
-@media (max-width: 768px) {
-    body {
-        background-size: auto 100%; /* Vertically scale the background image, maintaining its aspect ratio */
-    }
-}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+  }
 
-.site-container /* Styles for the site-container */{
-    display: grid;
-    grid-template-rows: 15% auto 450px 100px;
-    position: relative;
-    min-height: 50px;
-    max-height: 100px;
-    grid-column: 1/3;
-    margin-bottom: 0;
-}
+  main {
+    padding-top: 100px; /* Adjust this value as needed to create space for the header */
+  }
 
 .journey /* Journey in Awe specific styles */{
     text-align: center;
@@ -38,14 +36,6 @@ body {
 nav {
     width: 80%;
     margin: 0 auto;
-}
-
-/* Hide all navigation links except "Journey in Awe" on smaller screens */
-@media (max-width: 768px) {
-    nav ul li:not(:nth-child(4)) {
-        display: none;
-        font-size: 20px;
-    }
 }
 
 nav ul /* Flexbox for navigation menu */ {
@@ -75,7 +65,7 @@ hr {
     border: none;
     height: 1px;
     background:#fcfbfa;
-    margin: 3em;
+    margin: 200px 50px 50px 50px;
 }
 
 .main-box, .second-box, .third-box {
@@ -116,4 +106,150 @@ footer {
     text-align: center;
 }
 
+/* About page styles */
+.about-body {
+    background-image: url(images/Familydark.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
 
+.about-main-home {
+    padding-top: 50px;
+}
+
+.about-main {
+    padding-top: 100px;
+}
+
+article {
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    flex-direction: column;
+}
+
+.about-main-home>.quote {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    margin: 1em 0 1em 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.about-us {
+    font-family: 'Madelyn', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #fcfbfa;
+    text-align: center;
+}
+
+.quote, .about-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #fcfbfa;
+    padding: 1em;
+}
+
+/* awe styles home page */
+
+.awe-main {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto; /* Center the box horizontally */
+        margin-top: 2px; /* Add some space from the top */
+        padding-top: 200px; /* Adjust this value as needed to create space for the header */
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #fcfbfa;
+        font-size: 16px;
+}
+
+.awe-main-home {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 2px; /* Add some space from the top */
+    padding-top: 50px; /* Adjust this value as needed to create space for the header */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fcfbfa;
+    font-size: 16px;
+}
+
+.awe-main-home > .one, .two, .three {
+    display: flex;
+    flex-direction: row;
+}
+
+.awe-text {
+    font-family: 'Madelyn', sans-serif;
+    text-align: center;
+    color: #fcfbfa;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0;
+
+}
+
+.awe-main > .quote {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    margin: 1em 0 1em 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.awe-main article {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.awe-main > .one, .two, .three {
+    display: flex;
+    flex-direction: row;
+}
+
+.awe-main h3 {
+    padding-top: 0.5em;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #fcfbfa;
+}
+
+/* smaller screens */
+/* Hide all navigation links except "Journey in Awe" on smaller screens */
+@media (max-width: 768px) {
+    body {
+        background-size: auto 100%; /* Vertically scale the background image, maintaining its aspect ratio */
+    }
+
+    nav ul li:not(:nth-child(3)) {
+        display: none;
+    }
+
+    img {
+        height: 80px;
+        width: auto;
+    }
+}
