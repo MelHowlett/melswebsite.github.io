@@ -13,7 +13,7 @@
     padding: 0;
 }
 
-header {
+header, .about-header, .offerings-header, .awe-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,7 +24,7 @@ header {
   }
 
   main {
-    padding-top: 100px; /* Adjust this value as needed to create space for the header */
+    padding-top: 150px; /* Adjust this value as needed to create space for the header */
   }
 
 .journey /* Journey in Awe specific styles */{
@@ -93,20 +93,8 @@ hr {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #fcfbfa;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 500px;
-    margin: 0 auto; /* Center the box horizontally */
-    margin-top: 10px; /* Add some space from the top */
-    padding: 20px;
-    text-align: center;
-}
-
 /* About page styles */
+
 .about-body {
     background-image: url(images/Familydark.jpg);
     background-repeat: no-repeat;
@@ -117,12 +105,20 @@ footer {
     padding: 0;
 }
 
-.about-main-home {
-    padding-top: 50px;
+.about-main {
+    padding-top: 200px;
 }
 
-.about-main {
-    padding-top: 100px;
+.about-main-home, .awe-main-home {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 2px; /* Add some space from the top */
+    padding-top: 50px; /* Adjust this value as needed to create space for the header */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fcfbfa;
+    font-size: 16px;
 }
 
 article {
@@ -134,7 +130,7 @@ article {
     flex-direction: column;
 }
 
-.about-main-home>.quote {
+.about-main-home>.quote, .awe-main>.quote {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -163,6 +159,33 @@ article {
     padding: 1em;
 }
 
+/*offerings styles*/
+
+.offerings-body {
+        background-image: url(images/SunsetMountainsDark.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+}
+
+.offerings-main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 200px; /* Add some space from the top */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fcfbfa;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
 /* awe styles home page */
 
 .awe-main {
@@ -177,17 +200,6 @@ article {
         font-size: 16px;
 }
 
-.awe-main-home {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto; /* Center the box horizontally */
-    margin-top: 2px; /* Add some space from the top */
-    padding-top: 50px; /* Adjust this value as needed to create space for the header */
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #fcfbfa;
-    font-size: 16px;
-}
 
 .awe-main-home > .one, .two, .three {
     display: flex;
@@ -204,24 +216,6 @@ article {
 
 }
 
-.awe-main > .quote {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1em;
-    margin: 1em 0 1em 0;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.awe-main article {
-    background-color: rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-}
-
 .awe-main > .one, .two, .three {
     display: flex;
     flex-direction: row;
@@ -235,6 +229,19 @@ article {
 a {
     text-decoration: none;
     color: #fcfbfa;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fcfbfa;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 10px; /* Add some space from the top */
+    padding: 20px;
+    text-align: center;
 }
 
 /* smaller screens */
