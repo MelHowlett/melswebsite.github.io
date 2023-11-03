@@ -18,7 +18,7 @@ header, .about-header, .offerings-header, .awe-header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
     text-align: center;
   }
@@ -77,20 +77,12 @@ hr {
     font-family: 'Montserrat', sans-serif;
     color: #fcfbfa;
     font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .second-box, .third-box {
-    width: 80%;
-    max-width: 500px;
-    margin: 0 auto; /* Center the box horizontally */
     margin-top: 10px; /* Add some space from the top */
-    padding: 20px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #fcfbfa;
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* About page styles */
@@ -171,7 +163,8 @@ hr {
         padding: 0;
 }
 
-.offerings-main {
+
+.offerings-main, .offerings {
     width: 80%;
     max-width: 1000px;
     margin: 0 auto; /* Center the box horizontally */
@@ -183,7 +176,24 @@ hr {
     font-size: 16px;
     display: flex;
     flex-direction: column;
- 
+}
+
+.offerings>.title, .box1, .box2 {
+    padding: 20px;
+}
+
+.box1, .box2 {
+    display: flex;
+}
+
+.offerings {
+    margin-top: 100px;
+}
+
+.offerings>.title {
+    font-size: 60px;
+    font-family: 'Madelyn', sans-serif;
+
 }
 
 /* awe styles home page */
@@ -192,9 +202,8 @@ hr {
     font-family: 'Madelyn', sans-serif;
     text-align: center;
     color: #fcfbfa;
-    font-size: 50px;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 0;
+    font-size: 60px;
+
 
 }
 
