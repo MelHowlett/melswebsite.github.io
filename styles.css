@@ -129,11 +129,22 @@ hr {
     justify-content: center;
     padding: 1em;
     margin: 1em 0 1em 0;
-    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.about-main-home .quote,
+.awe-main .quote {
+    width: 70%; /* Set the desired width for the quote */
+    margin: 0 auto; /* Center the quote horizontally */
+}
+
+.about-main-home .quote {
+    margin-bottom: 20px; /* Add margin below the quote */
 }
 
 .about-text {
-    background-color: rgba(0, 0, 0, 0.2);
+    width: 70%; /* Set the desired width for the text */
+    margin: 0 auto; /* Center the text horizontally */
 }
 
 .about-us {
@@ -142,6 +153,7 @@ hr {
     text-align: center;
     color: #fcfbfa;
     text-align: center;
+    margin-top: 20px; /* Add margin above the "about us" text */
 }
 
 .quote, .about-text {
@@ -241,12 +253,28 @@ a {
 .join {
     color: #fcfbfa;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto; /* Center the box horizontally */
-    margin-top: 10px; /* Add some space from the top */
-    padding: 20px;
+    margin: 20px; /* Add margin around the entire "join" section */
+    padding: 20px; /* Add padding around the entire "join" section */
+}
+
+.join h3 {
+    font-size: 40px;
+    margin-top: 20px; /* Add margin above the h3 element */
+    margin-bottom: 10px; /* Add margin below the h3 element */
+}
+
+.join p {
+    margin-top: 10px; /* Add margin above the p element */
+    margin-bottom: 10px; /* Add margin below the p element */
+}
+
+.join form {
+    margin-top: 10px; /* Add margin above the form element */
+    margin-bottom: 20px; /* Add margin below the form element */
 }
 
 
