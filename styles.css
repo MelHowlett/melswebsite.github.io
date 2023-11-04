@@ -217,6 +217,14 @@ hr {
 
 }
 
+.mel>h3,p, .justin>h3,p, .titus>h3,p, .jarom>h3,p, .penny>h3,p {
+    margin-bottom: 10px;
+} 
+
+.mel>h3, .justin>h3, .titus>h3, .jarom>h3, .penny>h3 {
+    font-size: 25px;
+}
+
 /* awe styles home page */
 
 .awe-text {
