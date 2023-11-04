@@ -178,12 +178,21 @@ hr {
     flex-direction: column;
 }
 
-.offerings>.title, .box1, .box2 {
-    padding: 20px;
+.offerings-main > .box1, .box2, .box3, .box4, .box5 {
+    display: flex;
+    justify-content: space-around; /* Add space around the boxes */
+    margin: 20px 0; /* Adjust the margin to control the space between rows of boxes */
 }
 
-.box1, .box2 {
-    display: flex;
+/* Add space around each box */
+.offerings-main .box1,
+.offerings-main .box2,
+.offerings-main .box3,
+.offerings-main .box4,
+.offerings-main .box5 {
+    margin: 10px; /* Adjust the margin to control the space around individual boxes */
+    padding: 10px;
+
 }
 
 .offerings {
