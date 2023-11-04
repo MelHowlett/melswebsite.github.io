@@ -98,8 +98,32 @@ hr {
 }
 
 .about-main {
-    padding-top: 200px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 2px; /* Add some space from the top */
+    padding-top: 200px; /* Adjust this value as needed to create space for the header */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fcfbfa;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
+
+.about-main .quote, .about-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #fcfbfa;
+    padding: 1em;
+    width: 60%;
+}
+
+.about-main .quote {
+    margin: 0 auto; /* Center the quote horizontally */
+    transform: translateY(-50%); /* Adjust the vertical position */
+}
+
+/* about home page styles*/
 
 .about-main-home, .awe-main-home {
     width: 80%;
@@ -111,15 +135,6 @@ hr {
     font-family: 'Montserrat', sans-serif;
     color: #fcfbfa;
     font-size: 16px;
-}
-
-.offerings-main {
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 16px;
-    flex-direction: column;
 }
 
 .about-main-home>.quote, .awe-main>.quote {
@@ -156,13 +171,6 @@ hr {
     margin-top: 20px; /* Add margin above the "about us" text */
 }
 
-.quote, .about-text {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: #fcfbfa;
-    padding: 1em;
-}
-
 /*offerings styles*/
 
 .offerings-body {
@@ -174,7 +182,6 @@ hr {
         margin: 0;
         padding: 0;
 }
-
 
 .offerings-main, .offerings {
     width: 80%;
@@ -218,7 +225,7 @@ hr {
 }
 
 .mel>h3,p, .justin>h3,p, .titus>h3,p, .jarom>h3,p, .penny>h3,p {
-    margin-bottom: 10px;
+    margin: 10px;
 } 
 
 .mel>h3, .justin>h3, .titus>h3, .jarom>h3, .penny>h3 {
@@ -270,7 +277,7 @@ a {
 }
 
 .join h3 {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 20px; /* Add margin above the h3 element */
     margin-bottom: 10px; /* Add margin below the h3 element */
 }
@@ -311,7 +318,7 @@ footer {
     }
 
     img {
-        height: 80px;
-        width: auto;
+        height: auto;
+        width: 80%;
     }
 }
