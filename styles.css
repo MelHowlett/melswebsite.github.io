@@ -158,7 +158,7 @@ hr {
 }
 
 .about-text {
-    width: 70%; /* Set the desired width for the text */
+    width: 80%; /* Set the desired width for the text */
     margin: 0 auto; /* Center the text horizontally */
 }
 
@@ -239,8 +239,6 @@ hr {
     text-align: center;
     color: #fcfbfa;
     font-size: 60px;
-
-
 }
 
 .awe-main-home > .one, .two, .three {
@@ -264,6 +262,8 @@ a {
     text-decoration: none;
     color: #fcfbfa;
 }
+
+/*Join section styles*/
 
 .join {
     color: #fcfbfa;
@@ -292,6 +292,7 @@ a {
     margin-bottom: 20px; /* Add margin below the form element */
 }
 
+/*Footer styels*/
 
 footer {
     text-align: center;
